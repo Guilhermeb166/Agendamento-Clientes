@@ -1,5 +1,5 @@
-import { db } from '../../firebase/firebase-config.js';
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js";
+import { db } from './firebase-config.js';
+import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 import { buscarHorariosAgendados } from '../src/scripts/horarioReservado.js';
 
 // Função para salvar dados no Firestore
@@ -58,16 +58,6 @@ document.getElementById('agendamentoForm').addEventListener('submit', async (eve
 
         // Se chegou aqui, o horário pode ser agendado
         await addDoc(collection(db, "agendamentos"), dadosDoFormulario);
-
-        //Mensagem do WhatsApp
-        const telefoneBarbeiro = "5585989258145";
-        const mensagem = `Olá, Realizei um agendamento:\n\nNome: ${nome}\nData: ${data}\nHora: ${hora}\nServiço: ${servico}`;
-        const urlWhatsApp = `https://wa.me/${telefoneBarbeiro}?text=${encodeURIComponent(mensagem)}`;
-        
-         // Atualiza o link do WhatsApp
-         const whatsappLink = document.getElementById('whatsapp-link');
-         whatsappLink.href = urlWhatsApp;
-
          document.getElementById('confirmar').style.display = 'block';
          document.querySelector('.form').style.display = 'none';
 
