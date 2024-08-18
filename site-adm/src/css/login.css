@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #272727 url("../img/BARBEARIA-fundoteste.jpg") repeat center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+#cadastro {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#cadastroForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#cadastroForm label {
+  font-weight: 700;
+  font-size: 22px;
+}
+#cadastroForm input {
+  display: flex;
+  justify-content: center;
+  width: 215px;
+  height: 25px;
+  margin-bottom: 7px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 1px 2px black;
+}
+#cadastroForm .emailCad {
+  outline: none;
+  text-indent: 4px;
+}
+#cadastroForm .Cadsenha {
+  outline: none;
+  text-indent: 4px;
+}
+#cadastroForm #cadastrar-btn {
+  margin-top: 30px;
+  letter-spacing: 1px;
+  width: 190px;
+  height: 30px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px black;
+  background-image: linear-gradient(150deg, black, rgb(76, 74, 74));
+  color: #fff;
+  font-weight: 600;
+}
+#cadastroForm #cadastrar-btn:hover {
+  opacity: 0.8;
+}
+#cadastroForm #cadastrar-btn:active {
+  background-image: linear-gradient(150deg, rgb(53, 53, 53), rgb(26, 25, 25));
+}
+#cadastroForm p {
+  margin-top: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#cadastroForm p:hover {
+  color: #8f8f8f;
+}
+#cadastroForm p:active {
+  opacity: 0.7;
+}
+
+#login {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid #fff;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#loginForm label {
+  font-weight: 700;
+  font-size: 22px;
+}
+#loginForm input {
+  display: flex;
+  justify-content: center;
+  width: 215px;
+  height: 25px;
+  margin-bottom: 7px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 1px 2px black;
+}
+#loginForm .emailLog {
+  outline: none;
+  text-indent: 4px;
+}
+#loginForm .Logsenha {
+  outline: none;
+  text-indent: 4px;
+}
+#loginForm #login-btn {
+  width: 190px;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  height: 30px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px black;
+  background-image: linear-gradient(150deg, black, rgb(76, 74, 74));
+  color: #fff;
+  font-weight: 600;
+}
+#loginForm #login-btn:hover {
+  opacity: 0.8;
+}
+#loginForm #login-btn:active {
+  background-image: linear-gradient(150deg, rgb(53, 53, 53), rgb(26, 25, 25));
+}
+#loginForm p {
+  margin-top: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#loginForm p:hover {
+  color: #8f8f8f;
+}
+#loginForm p:active {
+  opacity: 0.7;
+}/*# sourceMappingURL=login.css.map */

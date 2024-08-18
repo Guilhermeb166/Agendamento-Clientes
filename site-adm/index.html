@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login - admin</title>
+    <link rel="stylesheet" href="src/css/login.css" />
+  </head>
+  <body>
+    <section id="cadastro">
+      <form id="cadastroForm">
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" class="emailCad" required />
+        </div>
+        <div>
+          <label for="senha">Senha: </label>
+          <input type="password" class="Cadsenha" />
+        </div>
+        <button type="submit" id="cadastrar-btn">Cadastrar Usuário</button>
+        <p id="contaExistente">Já tenho uma conta criada</p>
+      </form>
+    </section>
+    <section id="login">
+      <form id="loginForm">
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" class="emailLog" required />
+        </div>
+        <div>
+          <label for="senha">Senha:</label>
+          <input type="password" class="Logsenha" required />
+        </div>
+        <button type="submit" id="login-btn">Entrar</button>
+        <p id="contaNova">Clique aqui para criar uma conta</p>
+      </form>
+    </section>
+
+    <script src="firebase/firebase-config.js" defer type="module"></script>
+    <script src="src/scripts/loginTela.js"></script>
+    <script type="module" src="firebase/login.js"></script>
+  </body>
+</html>

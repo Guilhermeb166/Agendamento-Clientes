@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administração - Agendamentos</title>
+    <link rel="stylesheet" href="src/css/style.css"/>
+    <link rel="stylesheet" href="src/css/query.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="../src/img/feitosa-removebg-preview.png" type="image/x-icon"/>
+  </head>
+  <body>
+    <!--Cabeçalho-->
+    <header>
+      <img src="../src/img/feitosa-removebg-preview.png" alt="" />
+      <h1>Painel de Administração</h1>
+    </header>
+
+    <!--Tabela de Agendamentos-->
+    <section class="agendamentos">
+    <div class="agendamentos-header">
+      <h2>Agendamentos</h2>
+      <button id="logout-btn">SAIR DA CONTA</button>
+    </div>
+      <table id="agendamentosTable">
+        <thead>
+          <tr>
+            <th class="nome">Nome</th>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Serviço</th>
+            <th>Concluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Os dados serão inseridos aqui pelo JavaScript -->
+        </tbody>
+      </table>
+    </section>
+    <!--Fim da Tabela de Agendamentos-->
+
+   
+    
+
+
+    <script src="firebase/firebase-config.js" defer type="module"></script>
+    <script type="module" src="../src/scripts/adm.js" ></script>
+    <script type="module" src="firebase/logout.js" ></script>
+  </body>
+</html>

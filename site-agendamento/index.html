@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento de Horário</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/img/feitosa-removebg-preview.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!--Cabeçalho-->
+    <header>
+      <img src="src/img/feitosa-removebg-preview.png" alt="" />
+      <h1>Seja Bem vindo ao Feitosa Barber</h1>
+    </header>
+
+    <div id="confirmar" style="display: none;">
+      <p>Agendamento realizado com sucesso!</p>
+      <p>Caso queira confirmar seu agendamento com o barbeiro</p>
+      <div id="links">
+        <a href="index.html" class="voltar">Não precisa</a>
+        <a id="whatsapp-link" class="whatsapp">Clique aqui</a>
+      </div>
+    </div>
+    <!--Ínicio do Formulário-->
+    <section class="form">
+      <form id="agendamentoForm">
+        <label for="nome">Qual o seu nome?</label>
+        <input type="text" name="nome" id="nome" autocomplete="off" required maxlength="20"/>
+
+        <label for="data">Escolha o dia</label>
+        <input type="date" id="data" name="data" required />
+
+        <label>Escolha um horário</label>
+        <p id="abrirHorarios" onclick="abrirHorarios()">
+          Clique aqui para saber os horários disponíveis
+          <i class="bx bxs-down-arrow"></i>
+        </p>
+
+        <!--ínicio Horários disponíveis-->
+        <div id="horarios"></div>
+        <!--Fim Horários disponíveis-->
+
+        <!--ínicio da Escolha de Serviços-->
+        <div class="service-selection">
+          <h1>Escolha aqui o serviço</h1>
+          <div id="service-option">
+            <label for="servico-cabelo">
+              <input
+                type="radio"
+                name="option"
+                value="Cabelo"
+                id="servico-cabelo"
+                onclick="borda(event)"
+              />
+              <img src="src/img/cabelo.png" alt="" />
+              <p>Cabelo</p>
+            </label>
+            <label for="servico-barba">
+              <input
+                type="radio"
+                name="option"
+                value="Barba"
+                id="servico-barba"
+                onclick="borda(event)"
+              />
+              <img src="src/img/barba.png" alt="" />
+              <p>Barba</p>
+              <a href=""></a>
+            </label>
+            <label for="servico-barba-cabelo">
+              <input
+                type="radio"
+                name="option"
+                value="Barba e cabelo"
+                id="servico-barba-cabelo"
+                onclick="borda(event)"
+              />
+              <img src="src/img/barba-cabelo.png" alt="" />
+              <p>Barba e cabelo</p>
+            </label>
+          </div>
+        </div>
+        <!--fim da Escolha de Serviços-->
+
+        <button class="agendar-btn">Agendar Horário</button>
+      </form>
+    </section>
+    <!--Fim do Formulário-->
+
+    <script src="src/scripts/script.js"></script>
+    <script src="firebase/firebase-config.js" defer type="module"></script>
+    <script type="module" src="firebase/salvandoForm.js"></script>
+    <script type="module" src="src/scripts/horarioReservado.js"></script>
+  </body>
+</html>

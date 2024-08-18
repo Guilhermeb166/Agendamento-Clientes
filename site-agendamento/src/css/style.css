@@ -1,0 +1,326 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200..800&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+}
+
+body {
+  background: #272727 url("../img/BARBEARIA-fundoteste.jpg") repeat center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+/*ínicio do Cabeçalho*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  height: 120px;
+  position: relative;
+  width: 100%;
+}
+header img {
+  height: 130px;
+}
+header h1 {
+  font-size: 1.8em;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  margin-right: 5px;
+}
+
+/*Fim do Cabeçalho*/
+#confirmar {
+  margin: auto;
+  width: 320px;
+  height: 170px;
+  background-color: #4e4e4e;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+  padding: 10px 5px 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#confirmar p {
+  font-size: 17px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px black;
+}
+#confirmar p:nth-child(1) {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+#confirmar #links {
+  display: flex;
+  margin-top: 6px;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+#confirmar #links a {
+  text-decoration: none;
+  color: #f2f2f2;
+  text-shadow: 1px 1px 2px black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+#confirmar #links .voltar {
+  font-size: 18px;
+  background-color: #b1afaf;
+}
+#confirmar #links .whatsapp {
+  font-size: 18px;
+  background: #1390e3;
+}
+#confirmar #links .whatsapp:hover {
+  background-color: #0f66a0;
+}
+#confirmar #links .whatsapp:active {
+  background-color: #095080;
+}
+
+/*ínicio da section Formulário*/
+.form {
+  position: relative;
+  width: 100%;
+  /*ínicio da tag form*/
+  /*Fim da tag form*/
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+  color: #fff;
+  /*ínicio da estilização do link para abrir os horários*/
+  /*Fim da estilização do link para abrir os horários*/
+  /*ínicio da estilização dos Horários*/
+  /*Fim da estilização dos Horários*/
+  /*Ínicio da estilização da escolha de serviços*/
+  /*Fim da estilização da escolha de serviços*/
+  /*ínicio da estilização do botão de agendar*/
+  /*Fim da estilização do botão de agendar*/
+}
+.form form label {
+  margin: auto;
+}
+.form form input {
+  border-radius: 7px;
+  width: 210px;
+  height: 30px;
+  margin: auto;
+  outline: none;
+  text-indent: 5px;
+}
+.form form #nome {
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+.form form #data {
+  margin-bottom: 30px;
+  margin-top: 5px;
+  text-indent: 32px;
+}
+.form form #data::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.form form #abrirHorarios {
+  font-weight: 700;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.form form #abrirHorarios:hover {
+  color: #808080;
+  text-decoration: underline;
+}
+.form form #horarios {
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: none;
+  grid-template-columns: repeat(2, 100px);
+  margin: auto;
+  overflow: hidden;
+  /*Estilização para quando clicar nos horários que quiser escolher*/
+  /*ínicio da estilização do botão de fechar os horários disponíveis*/
+  /*Fim da estilização do botão de fechar os horários disponíveis*/
+}
+.form form #horarios label {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #272727;
+  color: #272727;
+  cursor: pointer;
+  padding: 2px;
+}
+.form form #horarios label input {
+  display: none;
+}
+.form form #horarios label.background-add {
+  background-color: #e4ce6a;
+}
+.form form #horarios i {
+  border: 1px solid #272727;
+  text-align: center;
+  cursor: pointer;
+  /*grid-column: span 2;*/
+  font-size: 25px;
+  color: black;
+  margin: auto;
+  width: 100%;
+}
+.form form #horarios i:hover {
+  background-color: #272727;
+  color: #fff;
+}
+.form form #horarios i:active {
+  background-color: #5b5b5b;
+}
+.form form .service-selection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+  z-index: 9999;
+  /*ínicio da estilização dos card de serviço oferecido*/
+  /*fim da estilização dos card de serviço oferecido*/
+}
+.form form .service-selection h1 {
+  font-size: 1.6em;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 1px 2px 3px black;
+}
+.form form .service-selection #service-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+  margin-top: 15px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  /*Estilização para quando clicar no card*/
+}
+.form form .service-selection #service-option label {
+  cursor: pointer;
+  margin: 0 5px;
+  outline: none;
+  background: white;
+  height: 170px;
+  width: 70px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: transparent;
+  margin-bottom: 30px;
+}
+.form form .service-selection #service-option label p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+.form form .service-selection #service-option label.borda-adicionada {
+  border: 4px solid #e4ce6a;
+  background-color: rgba(228, 206, 106, 0.7764705882) !important;
+}
+.form form .service-selection #service-option label.borda-adicionada p {
+  color: #000000;
+}
+.form form .service-selection #service-option label.borda-adicionada img {
+  width: 70px;
+  margin: 10.8px;
+}
+.form form .service-selection #service-option img {
+  width: 70px;
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+.form form .service-selection input[type=radio] {
+  display: none;
+}
+.form form .agendar-btn {
+  border-radius: 5px;
+  width: 220px;
+  margin: auto;
+  font-size: 1.1em;
+  height: 30px;
+  background-color: #e4ce6a;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.519);
+  box-shadow: 1px 1px 2px black;
+  margin-bottom: 20px;
+}
+.form form .agendar-btn:hover {
+  background-color: #ddc34d;
+}
+
+/*Fim da section Formulário*/
+/*TELA DO ADMIN*/
+.agendamentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.agendamentos h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/*ínicio da tabela*/
+#agendamentosTable {
+  max-width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #fff;
+}
+#agendamentosTable th {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px 2px;
+  background-color: #ecd97b;
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#agendamentosTable td {
+  border: 2px solid black;
+  padding: 7px 2px;
+  font-size: 16px;
+}
+#agendamentosTable td .delete {
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+}
+#agendamentosTable td .delete i {
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
